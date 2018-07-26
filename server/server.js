@@ -16,8 +16,4 @@ app.use((req, res, next) => {
 
 app.use(express.static(join(__dirname, '../dist/mean-angular6')));
 
-const port = process.env.PORT || 3456;
-
-app.listen(port, () => console.log(`listening on port ${port}.`));
-
 module.exports = app;
