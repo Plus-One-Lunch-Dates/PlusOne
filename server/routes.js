@@ -1,7 +1,7 @@
 
-//TODO: Connect to server.js
+// TODO: Connect to server.js
 
-/*TODO: app.get('/', )
+/* TODO: app.get('/', )
 
 // Get IP of Connected User
 const user = (req.connection.remoteAddress).slice(7);
