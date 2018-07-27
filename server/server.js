@@ -16,4 +16,5 @@ app.use((req, res, next) => {
 
 app.use(express.static(join(__dirname, '../dist/mean-angular6')));
 
+
 module.exports = app;
