@@ -1,6 +1,6 @@
 const db = require('./index.js');
 
-const { User } = db;
+const User = db.User;
 
 
 const saveUser = (firstName, lastName, email, password) => {
@@ -27,6 +27,8 @@ const updateUser = (email, location, cravings, price, attire) => {
     console.log(updatedModel);
   });
 }
+
+updateUser('email', 'location', 'cravings', 'price', 'attire');
 
 module.exports = {
   saveUser,
