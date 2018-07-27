@@ -28,7 +28,20 @@ const updateUser = (email, location, cravings, price, attire) => {
   });
 }
 
-updateUser('email', 'location', 'cravings', 'price', 'attire');
+const matchMaker = (user) => {
+  //will return a promise that will resolve into an array of matches which will include the user
+  //.then and .catch will need to be used when dealing with this function in the server
+  const query = { location: user.location };
+  return new Promise((resolve, reject) => {
+    User.find(query, (err, matches) => {
+      if (err) {
+        reject(error);      }
+      else {
+        resolve(matches);
+      };
+    });
+  });
+};
 
 module.exports = {
   saveUser,
