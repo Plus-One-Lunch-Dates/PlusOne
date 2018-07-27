@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 const tokens = require('./database-config2.js');
 
-const { USER_MONGODB, PROD_MONGODB } = tokens;
+const USER_MONGODB = tokens.USER_MONGODB;
+const PROD_MONGODB = tokens.PROD_MONGODB;
 
 mongoose.connect(`mongodb://${USER_MONGODB}:${PROD_MONGODB}@ds145951.mlab.com:45951/plus-one`);
 
@@ -21,7 +22,7 @@ const userSchema = mongoose.Schema({
   lastName: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  ipAddress: { type: String, required: false },
+  location: { type: String, required: false },
   cravings: { type: String, required: false },
   price: { type: String, required: false },
   attire: { type: String, required: false },
@@ -32,5 +33,5 @@ userSchema.plugin(uniqueValidator);
 const User = mongoose.model('User', userSchema);
 
 module.exports = {
-  User,
+  User: User
 };

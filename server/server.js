@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const db = require('../database/index')
+const dbhelpers = require('../database/database-helpers');
 
 const app = express();
 
