@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-{
-  "env": {
-    "es6": true
-  }
-=======
 {
   "env": {
     "es6": true
@@ -13,5 +7,4 @@
     "comma-dangle": 0,
     "no-console": 0
   }
->>>>>>> 909386f65979aeead0f2d81197e054e2bac1eda6
 }
