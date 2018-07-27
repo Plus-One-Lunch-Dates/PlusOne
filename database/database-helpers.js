@@ -17,33 +17,48 @@ const saveUser = (firstName, lastName, email, password) => {
   });
 };
 
-const updateUser = (email, location, cravings, price, attire) => {
+const updateLocation = (email, location) => {
   const query = { email };
-  User.findOneAndUpdate(query, { location, cravings, price, attire }, { new : true }, function(err, updatedModel){
-    if(err){
-        console.log("Something wrong when updating database!");
+  User.findOneAndUpdate(query, { location }, { new: true }, (err, updatedModel) => {
+    if (err) {
+      console.log('Something wrong when updating database!');
     }
-    // TODO: Decide if we want to do anything else with this updated model here. Maybe pass in matchMaking helper as a cb?
+    // TODO: Decide if we want to do anything else with this updated model here.
+    // Maybe pass in matchMaking helper as a cb?
     console.log(updatedModel);
   });
-}
+};
+
+const updatePreferences = (email, cravings, price, attire) => {
+  const query = { email };
+  User.findOneAndUpdate(query, { cravings, price, attire }, { new: true }, (err, updatedModel) => {
+    if (err) {
+      console.log('Something wrong when updating database!');
+    }
+    // TODO: Decide if we want to do anything else with this updated model here.
+    // Maybe pass in matchMaking helper as a cb?
+    console.log(updatedModel);
+  });
+};
 
 const matchMaker = (user) => {
-  //will return a promise that will resolve into an array of matches which will include the user
-  //.then and .catch will need to be used when dealing with this function in the server
+  // will return a promise that will resolve into an array of matches which will include the user
+  // .then and .catch will need to be used when dealing with this function in the server
   const query = { location: user.location };
   return new Promise((resolve, reject) => {
     User.find(query, (err, matches) => {
       if (err) {
-        reject(error);      }
-      else {
+        reject(err);
+      } else {
         resolve(matches);
-      };
+      }
     });
   });
 };
 
 module.exports = {
   saveUser,
-  updateUser
-  };
+  updateLocation,
+  updatePreferences,
+  matchMaker
+};
