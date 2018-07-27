@@ -1,7 +1,9 @@
 const express = require('express');
 const { urlencoded, json } = require('body-parser');
 const { join } = require('path');
-const db = require('../database/index')
+const db = require('../database/index');
+const dbhelpers = require('../database/database-helpers');
+
 
 const app = express();
 
