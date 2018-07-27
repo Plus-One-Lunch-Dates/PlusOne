@@ -23,6 +23,77 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _chat_chat_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./chat/chat.component */ "./src/app/chat/chat.component.ts");
+/* harmony import */ var _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./mainpage/mainpage.component */ "./src/app/mainpage/mainpage.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+var routes = [
+    {
+        path: '', redirectTo: 'mainpage', pathMatch: 'full'
+    },
+    {
+        path: 'mainpage',
+        component: _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_6__["MainpageComponent"]
+    },
+    {
+        path: 'signup',
+        component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_2__["SignupComponent"]
+    },
+    {
+        path: 'login',
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"]
+    },
+    {
+        path: 'home/:email',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]
+    },
+    {
+        path: 'chat',
+        component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_5__["ChatComponent"]
+    },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -41,7 +112,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"container-fluid\">\n\t<div class=\"row\">\n\t\t<div class=\"col-md-12\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-1\">\n\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">\n\t\t\t\t\t\t\t\tLogin\n\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-1\">\n\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">\n\t\t\t\t\t\t\t\tSignup\n\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t</div>\n          </div>\n          <div align=\"middle\">\n            <img align=\"middle\" width=\"150px\" alt=\"Plus-One-Logo\" src=\"../assets/plus-one-logo.png\">\n          </div>\n\t\t\t\t</div>\n      </div>\n      <br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t<img width=\"340\" alt=\"Sample Preferences\" src=\"../assets/sample-match.png\" />\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t</div>\n          </div>\n          <br>\n          <br>\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-3\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-6\">\n\t\t\t\t\t\t\t<img width=\"340px\" alt=\"Sample Chat\" src=\"../assets/sample-chat.png\" />\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-3\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<br>\n<br>\n<br>\n<br>\n<div align=\"middle\"><pre>BELOW IS THE SIGNUP COMPONENT TEMPLATE</pre></div>\n<div class=\"container-fluid\">\n\t<div class=\"row\">\n\t\t<div align=\"middle\" class=\"col-md-12\">\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n\t\t</div>\n\t</div>\n\t<br>\n\t<div class=\"row\">\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<div class=\"card\">\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\tCreate your account\n\t\t\t\t</h5>\n\t\t\t\t<div class=\"card-body\">\n\n          <form role=\"form\">\n\t\t\t\t\t\t<div class=\"form-group\">\n               \n              <label for=\"exampleInputEmail1\">\n                First Name\n              </label>\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\n\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">\n                Last Name\n              </label>\n              <input type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\n            </div>\t\n\t\t\t\t\t\t<div class=\"form-group\">\n               \n              <label for=\"exampleInputEmail1\">\n                Email address\n              </label>\n              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\n            </div>\n            <div class=\"form-group\">          \n              <label for=\"exampleInputPassword1\">\n                Password\n              </label>\n              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\n            </div>\n            <button type=\"submit\" class=\"btn btn-primary\">\n              Login\n            </button>\n          </form>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t</div>\n</div>\n<br><br><br><br><br><br>\n<div align=\"middle\"><pre>BELOW IS THE LOGIN COMPONENT TEMPLATE</pre></div>\n<div class=\"container-fluid\">\n\t<div class=\"row\">\n\t\t<div align=\"middle\" class=\"col-md-12\">\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n\t\t</div>\n\t</div>\n\t<br>\n\t<div class=\"row\">\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<div class=\"card\">\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\tSign in to your account\n\t\t\t\t</h5>\n\t\t\t\t<div class=\"card-body\">\n\n          <form role=\"form\">\n            <div class=\"form-group\">\n               \n              <label for=\"exampleInputEmail1\">\n                Email address\n              </label>\n              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\n            </div>\n            <div class=\"form-group\">\n               \n              <label for=\"exampleInputPassword1\">\n                Password\n              </label>\n              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\n            </div>\n            <button type=\"submit\" class=\"btn btn-primary\">\n              Login\n            </button>\n          </form>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t</div>\n</div>\n<br><br><br><br><br>\n<div align=\"middle\"><pre>BELOW IS THE CHAT COMPONENT TEMPLATE</pre></div>\n\n<br>\n<br>\n<div class=\"container-fluid\">\n\t<div class=\"row\">\n\t\t<div class=\"col-md-12\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\tChat\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div class=\"card-body\">\n\t\t\t\t\t\t\t\t\t<p align=\"middle\" class=\"card-text\">\n\t\t\t\t\t\t\t\t\t\tChat from SendBird here\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\tChat from SendBird here\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\tChat from SendBird here\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\tChat from SendBird here\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\tChat from SendBird here\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\tChat from SendBird here\n\t\t\t\t\t\t\t\t\t\t<br>\t\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"card-footer\">\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<form role=\"form\">\n\t\t\t\t\t\t\t\t\t\t<div style=\"display:inline\" class=\"form-group\">\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<input style=\"display:inline\" type=\"text\" class=\"form-control\" id=\"exampleInputText\" placeholder=\"Your Message Here\" />\n\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t<button style=\"display:inline\" type=\"submit\" class=\"btn btn-primary\">\n\t\t\t\t\t\t\t\t\t\t\t\tSend\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-9\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-3\">\t\t\t \n\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">\n\t\t\t\t\t\t\t\tKill Chat\n\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<br>\n<br>\n<br>\n<br>\n<br>\n<div align=\"middle\"><pre>BELOW IS THE LOGGED-IN HOME COMPONENT TEMPLATE</pre></div>\n<br>\n<br>\n<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-md-4\">\n        <div class=\"row\">\n          <div align=\"middle\" class=\"col-md-12\">\n            <img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n          </div>\n\t\t\t\t</div>\n\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div align=\"middle\" class=\"card\">\n              <h5 class=\"card-header\">\n                Dynamic User Name\n              </h5>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n            <div align=\"middle\" class=\"card\">\n              <h5 align=\"middle\" class=\"card-header\">\n                Favorite Foods\n              </h5>\n              <div align=\"middle\" class=\"card-body\">\n                <p class=\"card-text\">\n                  Dynamic Favorite Foods By User\n                </p>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n            <div class=\"card\">\n              <h5 align=\"middle\" class=\"card-header\">\n                Favorite Conversation Topics\n              </h5>\n              <div class=\"card-body\">\n                <p align=\"middle\" class=\"card-text\">\n                  Dynamic Conversation Topics By User\n                </p>\n              </div>             \n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-10\">\n          </div>\n          <div class=\"col-md-2\">\n             \n            <button type=\"button\" class=\"btn btn-primary\">\n              Logout\n            </button>\n          </div>\n\t\t\t\t</div>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Cravings\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tFilipino\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tPizza\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tEthiopian\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\tMexican\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t  Vietnamese\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\tOther\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Price\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$$$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>           \n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Attire\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tSporty\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tCasual\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tBusiness\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-10\">\n          </div>\n          <div class=\"col-md-2\">\n             \n            <button type=\"button\" class=\"btn btn-primary btn-block\">\n              Match Me\n            </button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <br><br><br><br><br>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<router-outlet>\r\n"
 
 /***/ }),
 
@@ -62,17 +133,23 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [])
     ], AppComponent);
     return AppComponent;
 }());
@@ -93,11 +170,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
-/* harmony import */ var _chat_chat_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./chat/chat.component */ "./src/app/chat/chat.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
+/* harmony import */ var _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./chat/chat.component */ "./src/app/chat/chat.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./mainpage/mainpage.component */ "./src/app/mainpage/mainpage.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -111,23 +191,50 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+var routes = [
+    {
+        path: '', redirectTo: '/login', pathMatch: 'prefix'
+    },
+    {
+        path: 'signup',
+        component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__["SignupComponent"]
+    },
+    {
+        path: 'login',
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"]
+    },
+    {
+        path: 'home/:email',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"]
+    },
+    {
+        path: 'chat',
+        component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__["ChatComponent"]
+    },
+];
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"],
-                _signup_signup_component__WEBPACK_IMPORTED_MODULE_4__["SignupComponent"],
-                _chat_chat_component__WEBPACK_IMPORTED_MODULE_5__["ChatComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"],
+                _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__["SignupComponent"],
+                _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__["ChatComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
+                _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_8__["MainpageComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -281,7 +388,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\t<div class=\"row\">\n\t\t<div align=\"middle\" class=\"col-md-12\">\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n\t\t</div>\n\t</div>\n\t<br>\n\t<div class=\"row\">\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<div class=\"card\">\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\tSign in to your account\n\t\t\t\t</h5>\n\t\t\t\t<div class=\"card-body\">\n\n          <form role=\"form\">\n            <div class=\"form-group\">\n               \n              <label for=\"exampleInputEmail1\">\n                Email address\n              </label>\n              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\n            </div>\n            <div class=\"form-group\">\n               \n              <label for=\"exampleInputPassword1\">\n                Password\n              </label>\n              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\n            </div>\n            <button type=\"submit\" class=\"btn btn-primary\">\n              Login\n            </button>\n          </form>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t</div>\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tSign in to your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputEmail1\">\r\n                Email address\r\n              </label>\r\n              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputPassword1\">\r\n                Password\r\n              </label>\r\n              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\">\r\n              Login\r\n            </button>\r\n          </form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -309,6 +416,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var LoginComponent = /** @class */ (function () {
     function LoginComponent() {
     }
+    LoginComponent.prototype.log = function (x) {
+        console.log(x);
+    };
     LoginComponent.prototype.ngOnInit = function () {
     };
     LoginComponent = __decorate([
@@ -320,6 +430,69 @@ var LoginComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], LoginComponent);
     return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mainpage/mainpage.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/mainpage/mainpage.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/mainpage/mainpage.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/mainpage/mainpage.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n          <br>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-10\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-1\">\r\n              <a routerLink=\"/login\">\r\n                <button type=\"button\" class=\"btn btn-primary\">\r\n                  Login\r\n                </button>\r\n              </a>\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-1\">\r\n              <a routerLink=\"/signup\">\r\n                <button type=\"button\" class=\"btn btn-primary\">\r\n                  Signup\r\n                </button>\r\n              </a>\r\n            </div>\r\n          </div>\r\n          <div align=\"middle\">\r\n            <img align=\"middle\" width=\"150px\" alt=\"Plus-One-Logo\" src=\"../assets/plus-one-logo.png\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <br>\r\n      <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-4\">\r\n              <img width=\"340\" alt=\"Sample Preferences\" src=\"../assets/sample-match.png\" />\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n            </div>\r\n          </div>\r\n          <br>\r\n          <br>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-3\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-6\">\r\n              <img width=\"340px\" alt=\"Sample Chat\" src=\"../assets/sample-chat.png\" />\r\n            </div>\r\n            <div class=\"col-md-3\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mainpage/mainpage.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/mainpage/mainpage.component.ts ***!
+  \************************************************/
+/*! exports provided: MainpageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainpageComponent", function() { return MainpageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MainpageComponent = /** @class */ (function () {
+    function MainpageComponent() {
+    }
+    MainpageComponent.prototype.ngOnInit = function () {
+    };
+    MainpageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-mainpage',
+            template: __webpack_require__(/*! ./mainpage.component.html */ "./src/app/mainpage/mainpage.component.html"),
+            styles: [__webpack_require__(/*! ./mainpage.component.css */ "./src/app/mainpage/mainpage.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MainpageComponent);
+    return MainpageComponent;
 }());
 
 
@@ -344,7 +517,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\t<div class=\"row\">\n\t\t<div align=\"middle\" class=\"col-md-12\">\n\t\t\t<img width=\"300px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n\t\t</div>\n\t</div>\n\t<br>\n\t<div class=\"row\">\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<div class=\"card\">\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\tCreate your account\n\t\t\t\t</h5>\n\t\t\t\t<div class=\"card-body\">\n\n          <form role=\"form\">\n\t\t\t\t\t\t<div class=\"form-group\">\n               \n              <label for=\"exampleInputEmail1\">\n                First Name\n              </label>\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\n\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">\n                Last Name\n              </label>\n              <input type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\n            </div>\t\n\t\t\t\t\t\t<div class=\"form-group\">\n               \n              <label for=\"exampleInputEmail1\">\n                Email address\n              </label>\n              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\n            </div>\n            <div class=\"form-group\">          \n              <label for=\"exampleInputPassword1\">\n                Password\n              </label>\n              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\n            </div>\n            <button type=\"submit\" class=\"btn btn-primary\">\n              Login\n            </button>\n          </form>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-3\">\n\t\t</div>\n\t</div>\n</div>\n<br><br><br><br><br><br>"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"300px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tCreate your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputEmail1\">\r\n                First Name\r\n              </label>\r\n\t\t\t\t\t\t\t<input required type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\r\n\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">\r\n                Last Name\r\n              </label>\r\n              <input required type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\r\n            </div>\t\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputEmail1\">\r\n                Email address\r\n              </label>\r\n              <input required type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\r\n            </div>\r\n            <div class=\"form-group\">          \r\n              <label for=\"exampleInputPassword1\">\r\n                Password\r\n              </label>\r\n              <input required type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\">\r\n              Sign Up\r\n            </button>\r\n          </form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<br><br><br><br><br><br>"
 
 /***/ }),
 
@@ -449,7 +622,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/os1/Documents/Programming/Javascript/OperationSpark/PLUS-ONE-FINAL/PlusOne/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /mnt/c/Users/Mac Daddy/Documents/School/immersion_two_jr/PlusOne/src/main.ts */"./src/main.ts");
 
 
 /***/ })
