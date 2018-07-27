@@ -21,7 +21,7 @@ const userSchema = mongoose.Schema({
   lastName: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  ipAddress: { type: String, required: false },
+  location: { type: String, required: false },
   cravings: { type: String, required: false },
   price: { type: String, required: false },
   attire: { type: String, required: false },
@@ -32,5 +32,5 @@ userSchema.plugin(uniqueValidator);
 const User = mongoose.model('User', userSchema);
 
 module.exports = {
-  User,
+  User
 };
