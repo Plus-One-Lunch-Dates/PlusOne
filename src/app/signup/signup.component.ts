@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
+  model:any = {}
 
-  constructor() { }
+  constructor(private Http: HttpService) { }
 
   ngOnInit() {
   }
 
+  signupUser(model) {
+    this.Http.signup(model);
+  }
 
 }

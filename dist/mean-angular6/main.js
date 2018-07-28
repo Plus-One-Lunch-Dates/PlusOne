@@ -170,14 +170,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
-/* harmony import */ var _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./chat/chat.component */ "./src/app/chat/chat.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./mainpage/mainpage.component */ "./src/app/mainpage/mainpage.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
+/* harmony import */ var _chat_chat_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./chat/chat.component */ "./src/app/chat/chat.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./mainpage/mainpage.component */ "./src/app/mainpage/mainpage.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -194,25 +195,26 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     {
         path: '', redirectTo: '/login', pathMatch: 'prefix'
     },
     {
         path: 'signup',
-        component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__["SignupComponent"]
+        component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_6__["SignupComponent"]
     },
     {
         path: 'login',
-        component: _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"]
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"]
     },
     {
         path: 'home/:email',
-        component: _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"]
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"]
     },
     {
         path: 'chat',
-        component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__["ChatComponent"]
+        component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_7__["ChatComponent"]
     },
 ];
 var AppModule = /** @class */ (function () {
@@ -221,20 +223,21 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"],
-                _signup_signup_component__WEBPACK_IMPORTED_MODULE_5__["SignupComponent"],
-                _chat_chat_component__WEBPACK_IMPORTED_MODULE_6__["ChatComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
-                _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_8__["MainpageComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"],
+                _signup_signup_component__WEBPACK_IMPORTED_MODULE_6__["SignupComponent"],
+                _chat_chat_component__WEBPACK_IMPORTED_MODULE_7__["ChatComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
+                _mainpage_mainpage_component__WEBPACK_IMPORTED_MODULE_9__["MainpageComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -370,6 +373,66 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/http.service.ts":
+/*!*********************************!*\
+  !*** ./src/app/http.service.ts ***!
+  \*********************************/
+/*! exports provided: HttpService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpService", function() { return HttpService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HttpService = /** @class */ (function () {
+    function HttpService(http) {
+        this.http = http;
+    }
+    HttpService.prototype.signup = function (_a) {
+        var firstName = _a.firstName, lastName = _a.lastName, email = _a.email, password = _a.password;
+        return this.http.post('/signup', {
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            password: password
+        }).subscribe(function (data) {
+            console.log(data, ' is what we got from the server');
+        });
+    };
+    HttpService.prototype.login = function (_a) {
+        var email = _a.email, password = _a.password;
+        return this.http.post('/login', {
+            email: email,
+            password: password
+        }).subscribe(function (data) {
+            console.log(data, ' is what we got from the server');
+        });
+    };
+    HttpService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], HttpService);
+    return HttpService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/login/login.component.css":
 /*!*******************************************!*\
   !*** ./src/app/login/login.component.css ***!
@@ -388,7 +451,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tSign in to your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputEmail1\">\r\n                Email address\r\n              </label>\r\n              <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputPassword1\">\r\n                Password\r\n              </label>\r\n              <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\">\r\n              Login\r\n            </button>\r\n          </form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tSign in to your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"email\">\r\n                Email address\r\n              </label>\r\n              <input [(ngModel)]=\"model.email\" #email=\"ngModel\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"password\">\r\n                Password\r\n              </label>\r\n              <input [(ngModel)]=\"model.password\" #password=\"ngModel\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" />\r\n            </div>\r\n            <button (click)=\"loginUser(model)\"type=\"submit\" class=\"btn btn-primary\">\r\n              Login\r\n            </button>\r\n\t\t\t\t\t</form>\r\n\t\t\t\t\t{{ model.email | json}}\r\n\t\t\t\t\t{{ model.password | json}}\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -403,6 +466,7 @@ module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -413,13 +477,17 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent() {
+    function LoginComponent(Http) {
+        this.Http = Http;
+        this.model = {};
     }
-    LoginComponent.prototype.log = function (x) {
-        console.log(x);
-    };
     LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent.prototype.loginUser = function (model) {
+        console.log(model, 'model');
+        this.Http.login(model);
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -427,7 +495,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -517,7 +585,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"300px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tCreate your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputEmail1\">\r\n                First Name\r\n              </label>\r\n\t\t\t\t\t\t\t<input required type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\r\n\t\t\t\t\t\t\t<label for=\"exampleInputEmail1\">\r\n                Last Name\r\n              </label>\r\n              <input required type=\"text\" class=\"form-control\" id=\"exampleInputText\" />\r\n            </div>\t\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"exampleInputEmail1\">\r\n                Email address\r\n              </label>\r\n              <input required type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" />\r\n            </div>\r\n            <div class=\"form-group\">          \r\n              <label for=\"exampleInputPassword1\">\r\n                Password\r\n              </label>\r\n              <input required type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" />\r\n            </div>\r\n            <button type=\"submit\" class=\"btn btn-primary\">\r\n              Sign Up\r\n            </button>\r\n          </form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<br><br><br><br><br><br>"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"300px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tCreate your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"firstname\">\r\n                First Name\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.firstName\" #firstname=\"ngModel\" name=\"firstname\" type=\"text\" class=\"form-control\" id=\"firstname\" required />\r\n\t\t\t\t\t\t\t<label for=\"lastname\">\r\n                Last Name\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.lastName\" #lastname=\"ngModel\" name=\"lastname\" type=\"text\" class=\"form-control\" id=\"lastname\"  required />\r\n            </div>\t\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"email\">\r\n                Email address\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.email\" #email=\"ngModel\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" required/>\r\n            </div>\r\n            <div class=\"form-group\">          \r\n              <label for=\"password\">\r\n                Password\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.password\" #password=\"ngModel\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" required minlength=\"6\"/>\r\n\t\t\t\t\t\t</div>\r\n            <button (click)=\"signupUser(model)\" type=\"submit\" value=\"Submit\" class=\"btn btn-primary\">\r\n              Register\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t</div>\r\n          </form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<br><br><br><br><br><br>"
 
 /***/ }),
 
@@ -532,6 +600,7 @@ module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -542,10 +611,16 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SignupComponent = /** @class */ (function () {
-    function SignupComponent() {
+    function SignupComponent(Http) {
+        this.Http = Http;
+        this.model = {};
     }
     SignupComponent.prototype.ngOnInit = function () {
+    };
+    SignupComponent.prototype.signupUser = function (model) {
+        this.Http.signup(model);
     };
     SignupComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -553,7 +628,7 @@ var SignupComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./signup.component.html */ "./src/app/signup/signup.component.html"),
             styles: [__webpack_require__(/*! ./signup.component.css */ "./src/app/signup/signup.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
     ], SignupComponent);
     return SignupComponent;
 }());
