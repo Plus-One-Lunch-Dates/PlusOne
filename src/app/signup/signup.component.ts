@@ -15,19 +15,8 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
 
-  signupUser(event) {
-    event.preventDefault()
-    const target = event.target
-    const firstname = target.querySelector('#firstname').value
-    const lastname = target.querySelector('#lastname').value
-    const email = target.querySelector('#email').value
-    const password = target.querySelector('#password').value
-    console.log(firstname, lastname, email, password)
-    this.Http.signup(this.model);
-    // console.log(this.model);
+  signupUser(model) {
+    this.Http.signup(model);
   }
 
-  onSubmit() {
-    
-  }
 }
