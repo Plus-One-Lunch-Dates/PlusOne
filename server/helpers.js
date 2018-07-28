@@ -31,7 +31,7 @@ const logoutUser = (req, res) => {
 };
 
 // addUserLocation successfully makes ipStack API Call and updates user's location
-const addUserLocation = (email, ipAddress) => axios({
+const getUserLocation = (email, ipAddress) => axios({
   method: 'get',
   url: `http://api.ipstack.com/${ipAddress}?access_key=${key}&fields=main`,
   dataType: 'jsonp'
@@ -44,5 +44,5 @@ const addUserLocation = (email, ipAddress) => axios({
   });
 
 module.exports = {
-  checkIfUserLoggedIn, createSession, addUserLocation, logoutUser
+  checkIfUserLoggedIn, createSession, getUserLocation, logoutUser
 };
