@@ -1,6 +1,6 @@
 const db = require('./index.js');
 
-const User = db.User;
+const { User } = db;
 
 
 const saveUser = (firstName, lastName, email, password) => {
@@ -56,9 +56,24 @@ const matchMaker = (user) => {
   });
 };
 
+const checkExistingUser = (email) => {
+  const query = { email };
+  return new Promise((resolve, reject) => {
+    User.find(query, (err, match) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(match);
+      }
+    });
+  });
+};
+
+
 module.exports = {
   saveUser,
   updateLocation,
   updatePreferences,
-  matchMaker
+  matchMaker,
+  checkExistingUser
 };
