@@ -1,5 +1,5 @@
 const axios = require('axios');
-const config = require('./config');
+const config = require('../database/database-config.js');
 const { updateLocation } = require('../database/database-helpers');
 
 const key = config.IPStack_API_KEY;
