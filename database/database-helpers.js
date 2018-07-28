@@ -18,13 +18,13 @@ const saveUser = (firstName, lastName, email, password) => {
 
 const updateLocation = (email, location) => {
   const query = { email };
-  User.findOneAndUpdate(query, { location }, { new: true }, (err, updatedModel) => {
-    if (err) {
-      console.log('Something wrong when updating database!');
-    }
-    // TODO: Decide if we want to do anything else with this updated model here.
-    // Maybe pass in matchMaking helper as a cb?
-    console.log(updatedModel);
+  return new Promise((resolve, reject) => {
+    User.findOneAndUpdate(query, { location }, { new: true }, (err, updatedModel) => {
+      if (err) {
+        reject(err);
+      }
+      resolve(updatedModel);
+    });
   });
 };
 
