@@ -68,7 +68,6 @@ const checkExistingUser = (email) => {
   });
 };
 
-
 module.exports = {
   saveUser,
   updateLocation,
