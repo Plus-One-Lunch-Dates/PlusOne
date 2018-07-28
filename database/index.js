@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
-const tokens = require('./database-config2.js');
+const tokens = require('./database-config.js');
 
 const USER_MONGODB = tokens.USER_MONGODB;
 const PROD_MONGODB = tokens.PROD_MONGODB;
