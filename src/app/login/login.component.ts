@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
+
 
 @Component({
   selector: 'app-login',
@@ -7,13 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  model: any = {}
 
-  log(x) {
-    console.log(x);
-  }
+  constructor(private Http: HttpService) { }
 
   ngOnInit() {
+  }
+
+  loginUser(model) {
+    console.log(model, 'model');
+    this.Http.login(model);
   }
 
 }
