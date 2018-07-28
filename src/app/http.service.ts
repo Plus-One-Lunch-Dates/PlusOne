@@ -8,12 +8,21 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  signup({firstname, lastname, email, password}) {
+  signup({firstName, lastName, email, password}) {
     return this.http.post('/signup', {
-      firstname,
-      lastname,
+      firstName,
+      lastName,
       email,
       password
+    }).subscribe(data => {
+      console.log(data, ' is what we got from the server');
+    })
+  }
+  
+  login({email, password}) {
+    return this.http.post('/login', {
+        email,
+        password
     }).subscribe(data => {
       console.log(data, ' is what we got from the server');
     })
