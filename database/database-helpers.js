@@ -62,6 +62,7 @@ const checkExistingUser = (email) => {
       if (err) {
         reject(err);
       } else {
+        console.log(match, 'match');
         resolve(match);
       }
     });

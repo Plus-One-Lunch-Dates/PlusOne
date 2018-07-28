@@ -31,7 +31,6 @@ app.use(express.static(path.join(__dirname, '../dist/mean-angular6')));
 app.post('/signup', (req, res) => {
   // eslint-disable-next-line
   const { firstName, lastName, email, password } = req.body;
-
   saveUser(firstName, lastName, email, password);
   res.sendStatus(201);
 });
@@ -40,14 +39,15 @@ app.post('/signup', (req, res) => {
 // User Login - Check if user exists in DB + Check if P/W Matches in DB
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
-  checkExistingUser(email);
-  if (checkExistingUser[0].password === password) {
-    createSession(req, res);
-    res.sendStatus(201);
-  } else {
-    res.redirect('./login');
-    res.sendStatus(404);
-  }
+  checkExistingUser(email)
+    .then((user) => {
+      if (user[0].password === password) {
+        createSession(req, res);
+      } else {
+        res.redirect('/login');
+      }
+    })
+    .catch(err => console.error(err, 'Error chceking user'));
 });
 
 // TODO: Test me - - - - Make sure we have access to the email from client
