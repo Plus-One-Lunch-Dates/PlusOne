@@ -1,7 +1,8 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+const { urlencoded, json } = require('body-parser');
 const path = require('path');
 const session = require('express-session');
+const { mapSeries } = require('bluebird');
 // eslint-disable-next-line
 const { checkExistingUser, saveUser, updatePreferences, matchMaker } = require('../database/database-helpers');
 const { createSession, getUserLocation } = require('./helpers.js');
@@ -14,9 +15,9 @@ app.use(session({
   saveUninitialized: true
 }));
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(urlencoded({ extended: false }));
 
-app.use(bodyParser.json());
+app.use(json());
 
 // Harvey's middleware
 app.use((req, res, next) => {
@@ -50,20 +51,30 @@ app.post('/login', (req, res) => {
     .catch(err => console.error(err, 'Error chceking user'));
 });
 
-// TODO: Test me - - - - Make sure we have access to the email from client
-// Meaning - - - - Do we retain it via session?
 // User submits preferences and looks for a match
-app.put('/home/:email', (req, res) => {
+app.post('/home/:email', (req, res) => {
+  // console.log(req.connection.remoteAddress, 'req.connection.remoteAddress');
+  // console.log(req.connection, 'req.connection');
   const { remoteAddress } = req.connection;
   // eslint-disable-next-line
-  const { email, cravings, price, attire } = req.body; // TODO: Log to check req.body and IP 
+  const { email, cravings, price, attire } = req.body; 
+  // TODO: Log to check req.body and IP
   const userIP = remoteAddress.slice(7);
+  console.log(userIP, 'userIP');
   updatePreferences(email, cravings, price, attire);
   getUserLocation(email, userIP)
-  // FIXME: Promisify/Get actual updatedModel from updateLocation out of this
-  // to pass into matchMaker
-    .then(matchMaker(/* see above */));
-  res.sendStatus(200);
+    .then(userModel => matchMaker(userModel))
+    .then(promisedMatches => mapSeries(promisedMatches, promisedMatch => promisedMatch))
+    .then((matches) => {
+      if (matches.length < 1) {
+        res.redirect('/home/:email');
+      } else {
+        // TODO: Need to send the [0] from returned matches.
+        console.log(matches[0], 'matches[0] Match Found!');
+        res.redirect('/chat');
+      }
+    })
+    .catch(err => console.error(err));
 });
 
 module.exports = app;
