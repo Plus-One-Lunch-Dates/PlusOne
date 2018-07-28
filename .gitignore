@@ -40,3 +40,4 @@ Thumbs.db
 /database/database-config.js
 /database/database-config2.js
 
+/server/config.js
