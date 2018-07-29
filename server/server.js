@@ -31,8 +31,8 @@ app.use(express.static(path.join(__dirname, '../dist/mean-angular6')));
 // Sign up for new account
 app.post('/signup', (req, res) => {
   // eslint-disable-next-line
-  const { firstName, lastName, email, password } = req.body;
-  saveUser(firstName, lastName, email, password);
+  const { firstName, lastName, username, email, password } = req.body;
+  saveUser(firstName, lastName, username, email, password);
   res.sendStatus(201);
 });
 
