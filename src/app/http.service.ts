@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -47,6 +48,10 @@ export class HttpService {
     }).subscribe(data => {
       console.log(data, ' is what we got from the server')
     })
+  }
+
+  exit(){
+    return this.http.get('/logout').subscribe((data) => console.log(data));
   }
 
 }
