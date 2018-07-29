@@ -372,26 +372,16 @@ var HomeComponent = /** @class */ (function () {
         // console.log(event.target.innerHTML.toString());
         this.model.email = 's.ayalew@yahoo.com';
         this.model.cravings = event.target.innerHTML.toString();
-        console.log(this.model.cravings);
-        console.log('cravings');
-        console.log(this.model.cravings);
     };
     HomeComponent.prototype.price = function (event) {
         // console.log(event.target.innerHTML.toString());
         this.model.price = event.target.innerHTML.toString();
-        console.log(this.model.price);
-        console.log('priceee');
-        console.log(this.model.price);
     };
     HomeComponent.prototype.attire = function (event) {
         // console.log(event.target.innerHTML.toString());
         this.model.attire = event.target.innerHTML.toString();
-        console.log(this.model.attire);
-        console.log('attire');
-        console.log(this.model.attire);
     };
     HomeComponent.prototype.matchMe = function (model) {
-        console.log(model, 'model');
         this.Http.gotoChat(model);
     };
     HomeComponent = __decorate([
