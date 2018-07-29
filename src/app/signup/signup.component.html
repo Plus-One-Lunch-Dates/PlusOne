@@ -41,8 +41,9 @@
 							<input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password" required minlength="6"/>
 						</div>
             <button (click)="signupUser(model)" type="submit" value="Submit" class="btn btn-primary">
-              Register
+              Sign Up
 						</button>
+						<a style="float: right;" class="btn btn-primary" routerLink="/login">Login</a>
 						<div>
 						</div>
           </form>
