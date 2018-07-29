@@ -343,6 +343,7 @@ module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n    
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -353,10 +354,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
+    function HomeComponent(route) {
+        this.route = route;
     }
     HomeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.route.params.subscribe(function (params) {
+            _this.email = params['email'];
+        });
+    };
+    HomeComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -364,7 +374,7 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -451,7 +461,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tSign in to your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"email\">\r\n                Email address\r\n              </label>\r\n              <input [(ngModel)]=\"model.email\" #email=\"ngModel\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"password\">\r\n                Password\r\n              </label>\r\n              <input [(ngModel)]=\"model.password\" #password=\"ngModel\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" />\r\n            </div>\r\n            <button (click)=\"loginUser(model)\"type=\"submit\" class=\"btn btn-primary\">\r\n              Login\r\n            </button>\r\n\t\t\t\t\t</form>\r\n\t\t\t\t\t{{ model.email | json}}\r\n\t\t\t\t\t{{ model.password | json}}\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t</div>\r\n\t</div>\r\n\t<br>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tSign in to your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"email\">\r\n                Email address\r\n              </label>\r\n              <input [(ngModel)]=\"model.email\" #email=\"ngModel\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n               \r\n              <label for=\"password\">\r\n                Password\r\n              </label>\r\n              <input [(ngModel)]=\"model.password\" #password=\"ngModel\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" />\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<a [routerLink]=\"['/home', model.email]\">\r\n            <button (click)=\"loginUser(model)\"type=\"submit\" class=\"btn btn-primary\">\r\n              Login\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t</form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -467,6 +477,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -478,9 +489,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(Http) {
+    function LoginComponent(Http, router) {
         this.Http = Http;
+        this.router = router;
         this.model = {};
     }
     LoginComponent.prototype.ngOnInit = function () {
@@ -488,6 +501,7 @@ var LoginComponent = /** @class */ (function () {
     LoginComponent.prototype.loginUser = function (model) {
         console.log(model, 'model');
         this.Http.login(model);
+        this.router.navigate(['home', model.email]);
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -495,7 +509,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -697,7 +711,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /mnt/c/Users/Mac Daddy/Documents/School/immersion_two_jr/PlusOne/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/athena/Documents/Coding/PlusOne/src/main.ts */"./src/main.ts");
 
 
 /***/ })
