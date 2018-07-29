@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /mnt/c/Users/Mac Daddy/Documents/School/immersion_two_jr/PlusOne/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/athena/Documents/Coding/PlusOne/src/styles.css */"./src/styles.css");
 
 
 /***/ })
