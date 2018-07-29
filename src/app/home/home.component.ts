@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -10,13 +11,24 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  email: string;
+  private sub: any;
+
   model: any = {}
 
-  constructor(private Http: HttpService) { }
+  constructor(private Http: HttpService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.sub = this.route.params.subscribe(params => {
+      this.email = params['email'];
+    });
   }
 
+  logout(){
+    console.log('in logout!!')
+    this.Http.exit()
+  }
+  
   log(){
     console.log(this.model);
   }

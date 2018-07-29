@@ -5,7 +5,7 @@ const session = require('express-session');
 const { mapSeries } = require('bluebird');
 // eslint-disable-next-line
 const { checkExistingUser, saveUser, updatePreferences, matchMaker } = require('../database/database-helpers');
-const { createSession, getUserLocation } = require('./helpers.js');
+const { createSession, getUserLocation, logoutUser } = require('./helpers.js');
 
 const app = express();
 
@@ -76,5 +76,7 @@ app.post('/home/:email', (req, res) => {
     })
     .catch(err => console.error(err));
 });
+
+app.get('/logout', logoutUser);
 
 module.exports = app;
