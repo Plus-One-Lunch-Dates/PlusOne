@@ -47,7 +47,6 @@
           <div class="col-md-10">
           </div>
           <div class="col-md-2">
-             
             <button type="button" class="btn btn-primary">
               Logout
             </button>
@@ -70,19 +69,19 @@
 								<div class="row">
 									<div class="col-md-4">
 										 
-										<button type="button" class="btn btn-primary btn-block">
+										<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
 											Filipino
 										</button>
 									</div>
 									<div class="col-md-4">
 										 
-										<button type="button" class="btn btn-primary btn-block">
+										<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
 											Pizza
 										</button>
 									</div>
 									<div class="col-md-4">
 										 
-										<button type="button" class="btn btn-primary btn-block">
+										<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
 											Ethiopian
 										</button>
 									</div>
@@ -92,18 +91,18 @@
 							<div class="container-fluid">
 									<div class="row">
 										<div class="col-md-4">									 
-											<button type="button" class="btn btn-primary btn-block">
+											<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
 												Mexican
 											</button>
 										</div>
 										<div class="col-md-4">
 											 
-											<button type="button" class="btn btn-primary btn-block">
+											<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
 											  Vietnamese
 											</button>
 										</div>
 										<div class="col-md-4">										 
-											<button type="button" class="btn btn-primary btn-block">
+											<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
 												Other
 											</button>
 										</div>
@@ -126,19 +125,19 @@
 								<div class="row">
 									<div align="middle" class="col-md-4">
 										 
-										<button type="button" class="btn btn-primary btn-block">
+										<button (click)="price($event)" type="button" class="btn btn-primary btn-block">
 											$
 										</button>
 									</div>
 									<div align="middle" class="col-md-4">
 										 
-										<button type="button" class="btn btn-primary btn-block">
+										<button (click)="price($event)" type="button" class="btn btn-primary btn-block">
 											$$
 										</button>
 									</div>
 									<div align="middle" class="col-md-4">
 										 
-										<button type="button" class="btn btn-primary btn-block">
+										<button (click)="price($event)" type="button" class="btn btn-primary btn-block">
 											$$$
 										</button>
 									</div>
@@ -161,19 +160,19 @@
 								<div class="row">
 									<div align="middle" class="col-md-4">
 										 
-										<button align="middle" type="button" class="btn btn-primary btn-block">
+										<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-primary btn-block">
 											Sporty
 										</button>
 									</div>
 									<div align="middle" class="col-md-4">
 										 
-										<button align="middle" type="button" class="btn btn-primary btn-block">
+										<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-primary btn-block">
 											Casual
 										</button>
 									</div>
 									<div align="middle" class="col-md-4">
 										 
-										<button align="middle" type="button" class="btn btn-primary btn-block">
+										<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-primary btn-block">
 											Business
 										</button>
 									</div>
@@ -185,13 +184,12 @@
           <div class="col-md-10">
           </div>
           <div class="col-md-2">
-             
-            <button type="button" class="btn btn-primary btn-block">
+            <button (click)="matchMe(model)" type="button" class="btn btn-primary btn-block">
               Match Me
             </button>
           </div>
         </div>
-      </div>
-    </div>
+			</div>
+		</div>
   </div>
   <br><br><br><br><br>
