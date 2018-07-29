@@ -40,9 +40,11 @@
               </label>
 							<input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password" required minlength="6"/>
 						</div>
+						<a [routerLink]="['/home', model.email]">
             <button (click)="signupUser(model)" type="submit" value="Submit" class="btn btn-primary">
               Register
 						</button>
+						</a>
 						<div>
 						</div>
           </form>
