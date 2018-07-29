@@ -2,10 +2,11 @@ const db = require('./index.js');
 
 const { User } = db;
 
-const saveUser = (firstName, lastName, email, password) => {
+const saveUser = (firstName, lastName, username, email, password) => {
   const user = new User({
     firstName,
     lastName,
+    username,
     email,
     password,
   });
