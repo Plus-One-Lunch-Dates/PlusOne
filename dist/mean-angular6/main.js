@@ -328,7 +328,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-md-4\">\n        <div class=\"row\">\n          <div align=\"middle\" class=\"col-md-12\">\n            <img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n          </div>\n\t\t\t\t</div>\n\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div align=\"middle\" class=\"card\">\n              <h5 class=\"card-header\">\n                Dynamic User Name\n              </h5>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n            <div align=\"middle\" class=\"card\">\n              <h5 align=\"middle\" class=\"card-header\">\n                Favorite Foods\n              </h5>\n              <div align=\"middle\" class=\"card-body\">\n                <p class=\"card-text\">\n                  Dynamic Favorite Foods By User\n                </p>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n            <div class=\"card\">\n              <h5 align=\"middle\" class=\"card-header\">\n                Favorite Conversation Topics\n              </h5>\n              <div class=\"card-body\">\n                <p align=\"middle\" class=\"card-text\">\n                  Dynamic Conversation Topics By User\n                </p>\n              </div>             \n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-10\">\n          </div>\n          <div class=\"col-md-2\">\n             \n            <button type=\"button\" class=\"btn btn-primary\">\n              Logout\n            </button>\n          </div>\n\t\t\t\t</div>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Cravings\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tFilipino\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tPizza\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tEthiopian\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\tMexican\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t  Vietnamese\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\tOther\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Price\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$$$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>           \n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Attire\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tSporty\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tCasual\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tBusiness\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-10\">\n          </div>\n          <div class=\"col-md-2\">\n             \n            <button type=\"button\" class=\"btn btn-primary btn-block\">\n              Match Me\n            </button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <br><br><br><br><br>\n"
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-md-4\">\n        <div class=\"row\">\n          <div align=\"middle\" class=\"col-md-12\">\n            <img width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n          </div>\n\t\t\t\t</div>\n\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div align=\"middle\" class=\"card\">\n              <h5 class=\"card-header\">\n                Dynamic User Name\n              </h5>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n            <div align=\"middle\" class=\"card\">\n              <h5 align=\"middle\" class=\"card-header\">\n                Favorite Foods\n              </h5>\n              <div align=\"middle\" class=\"card-body\">\n                <p class=\"card-text\">\n                  Dynamic Favorite Foods By User\n                </p>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n            <div class=\"card\">\n              <h5 align=\"middle\" class=\"card-header\">\n                Favorite Conversation Topics\n              </h5>\n              <div class=\"card-body\">\n                <p align=\"middle\" class=\"card-text\">\n                  Dynamic Conversation Topics By User\n                </p>\n              </div>             \n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-8\">\n\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-10\">\n          </div>\n          <div class=\"col-md-2\">\n            <button type=\"button\" class=\"btn btn-primary\">\n              Logout\n            </button>\n          </div>\n\t\t\t\t</div>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Cravings\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tFilipino\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tPizza\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tEthiopian\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\tMexican\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t  Vietnamese\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\tOther\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Price\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t$$$\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>           \n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <div class=\"row\">\n              <div class=\"col-md-12\">\n                <div class=\"card\">\n                  <h5 align=\"middle\" class=\"card-header\">\n                    Attire\n                  </h5>\n                </div>\n              </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tSporty\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tCasual\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-primary btn-block\">\n\t\t\t\t\t\t\t\t\t\t\tBusiness\n\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t<br>\n        <div class=\"row\">\n          <div class=\"col-md-10\">\n          </div>\n          <div class=\"col-md-2\">\n            <button (click)=\"matchMe(model)\" type=\"button\" class=\"btn btn-primary btn-block\">\n              Match Me\n            </button>\n          </div>\n        </div>\n\t\t\t</div>\n\t\t</div>\n  </div>\n  <br><br><br><br><br>\n"
 
 /***/ }),
 
@@ -343,6 +343,7 @@ module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n    
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -353,10 +354,45 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
+    function HomeComponent(Http) {
+        this.Http = Http;
+        this.model = {};
     }
     HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent.prototype.log = function () {
+        console.log(this.model);
+    };
+    HomeComponent.prototype.signupUser = function (model) {
+        this.Http.home(model);
+    };
+    HomeComponent.prototype.category = function (event) {
+        // console.log(event.target.innerHTML.toString());
+        this.model.email = 's.ayalew@yahoo.com';
+        this.model.cravings = event.target.innerHTML.toString();
+        console.log(this.model.cravings);
+        console.log('cravings');
+        console.log(this.model.cravings);
+    };
+    HomeComponent.prototype.price = function (event) {
+        // console.log(event.target.innerHTML.toString());
+        this.model.price = event.target.innerHTML.toString();
+        console.log(this.model.price);
+        console.log('priceee');
+        console.log(this.model.price);
+    };
+    HomeComponent.prototype.attire = function (event) {
+        // console.log(event.target.innerHTML.toString());
+        this.model.attire = event.target.innerHTML.toString();
+        console.log(this.model.attire);
+        console.log('attire');
+        console.log(this.model.attire);
+    };
+    HomeComponent.prototype.matchMe = function (model) {
+        console.log(model, 'model');
+        this.Http.gotoChat(model);
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -364,7 +400,7 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -420,6 +456,27 @@ var HttpService = /** @class */ (function () {
             console.log(data, ' is what we got from the server');
         });
     };
+    HttpService.prototype.home = function (_a) {
+        var attire = _a.attire, cravings = _a.cravings, price = _a.price;
+        return this.http.post('/home/:email', {
+            attire: attire,
+            cravings: cravings,
+            price: price
+        }).subscribe(function (data) {
+            console.log(data, ' is what we got from the server');
+        });
+    };
+    HttpService.prototype.gotoChat = function (_a) {
+        var email = _a.email, cravings = _a.cravings, price = _a.price, attire = _a.attire;
+        return this.http.post('/home/:email', {
+            email: email,
+            cravings: cravings,
+            price: price,
+            attire: attire,
+        }).subscribe(function (data) {
+            console.log(data, ' is what we got from the server');
+        });
+    };
     HttpService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -467,6 +524,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -478,16 +536,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(Http) {
+    function LoginComponent(Http, router) {
         this.Http = Http;
+        this.router = router;
         this.model = {};
     }
     LoginComponent.prototype.ngOnInit = function () {
     };
     LoginComponent.prototype.loginUser = function (model) {
-        console.log(model, 'model');
+        // console.log(model, 'model');
         this.Http.login(model);
+        this.router.navigate(['home/:email']);
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -495,7 +556,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -601,6 +662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -612,15 +674,18 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var SignupComponent = /** @class */ (function () {
-    function SignupComponent(Http) {
+    function SignupComponent(Http, router) {
         this.Http = Http;
+        this.router = router;
         this.model = {};
     }
     SignupComponent.prototype.ngOnInit = function () {
     };
     SignupComponent.prototype.signupUser = function (model) {
         this.Http.signup(model);
+        this.router.navigate(['home/:email']);
     };
     SignupComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -628,7 +693,7 @@ var SignupComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./signup.component.html */ "./src/app/signup/signup.component.html"),
             styles: [__webpack_require__(/*! ./signup.component.css */ "./src/app/signup/signup.component.css")]
         }),
-        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], SignupComponent);
     return SignupComponent;
 }());
