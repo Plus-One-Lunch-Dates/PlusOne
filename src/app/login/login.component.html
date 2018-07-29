@@ -21,21 +21,21 @@
               <label for="email">
                 Email address
               </label>
-              <input [(ngModel)]="model.email" #email="ngModel" name="email" type="email" class="form-control" id="email" />
+              <input [(ngModel)]="model.email" #email="ngModel" name="email" type="email" class="form-control" id="email"/>
             </div>
             <div class="form-group">
                
               <label for="password">
                 Password
               </label>
-              <input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password" />
-            </div>
+              <input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password"/>
+						</div>
+						<a [routerLink]="['/home', model.email]">
             <button (click)="loginUser(model)"type="submit" class="btn btn-primary">
               Login
-            </button>
+						</button>
+					</a>
 					</form>
-					{{ model.email | json}}
-					{{ model.password | json}}
 				</div>
 			</div>
 		</div>
