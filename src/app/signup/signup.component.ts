@@ -17,8 +17,8 @@ export class SignupComponent implements OnInit {
   }
 
   signupUser(model) {
-    this.Http.signup(model)
-    this.router.navigate(['home/:email']);
+    this.Http.signup(model);
+    this.router.navigate(['home', model.email]);
   }
 
 }
