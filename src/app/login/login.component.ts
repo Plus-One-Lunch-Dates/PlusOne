@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   loginUser(model) {
     // console.log(model, 'model');
     this.Http.login(model);
-    this.router.navigate(['home/:email']);
+    this.router.navigate(['home', model.email]);
   }
 
 }
