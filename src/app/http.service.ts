@@ -28,4 +28,25 @@ export class HttpService {
     })
   }
 
+  home({attire, cravings, price}) {
+    return this.http.post('/home/:email', {
+      attire,
+      cravings,
+      price    
+    }).subscribe(data => {
+      console.log(data, ' is what we got from the server');
+    })
+  }
+
+  gotoChat({ email, cravings, price, attire }) {
+    return this.http.post('/home/:email', {
+      email,
+      cravings,
+      price,
+      attire,
+    }).subscribe(data => {
+      console.log(data, ' is what we got from the server')
+    })
+  }
+
 }
