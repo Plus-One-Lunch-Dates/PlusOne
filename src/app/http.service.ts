@@ -49,4 +49,8 @@ export class HttpService {
     })
   }
 
+  exit(){
+    return this.http.get('/logout').subscribe((data) => console.log(data));
+  }
+
 }
