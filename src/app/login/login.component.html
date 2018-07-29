@@ -29,13 +29,12 @@
                 Password
               </label>
               <input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password" />
-            </div>
+						</div>
             <button (click)="loginUser(model)"type="submit" class="btn btn-primary">
               Login
-            </button>
+						</button>
+						<a style="float: right;" class="btn btn-primary" routerLink="/signup">Sign Up</a>
 					</form>
-					{{ model.email | json}}
-					{{ model.password | json}}
 				</div>
 			</div>
 		</div>
