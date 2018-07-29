@@ -9,10 +9,11 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  signup({firstName, lastName, email, password}) {
+  signup({firstName, lastName, username, email, password}) {
     return this.http.post('/signup', {
       firstName,
       lastName,
+      username,
       email,
       password
     }).subscribe(data => {
