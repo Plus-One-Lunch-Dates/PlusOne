@@ -41,14 +41,13 @@ export class HttpService {
     })
   }
 
-  gotoChat({ email, cravings, price, attire }) {
-    return this.http.post('/home/email', {
-      email,
-      cravings,
-      price,
-      attire,
-    }).subscribe(data => {
-      console.log(data, ' is what we got from the server')
+  gotoChat(model) {
+    return this.http.post('/home/email', model).subscribe(data => {
+      console.log(data, 'match from server');
+      console.log(model, 'user model');
+      model.match = data;
+      console.log(model.match, 'match prop on model');
+      return model;
     })
   }
 
