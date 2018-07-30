@@ -42,7 +42,7 @@ export class HttpService {
   }
 
   gotoChat({ email, cravings, price, attire }) {
-    return this.http.post('/home/:email', {
+    return this.http.post('/home/email', {
       email,
       cravings,
       price,
