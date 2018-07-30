@@ -3,8 +3,12 @@ const { urlencoded, json } = require('body-parser');
 const path = require('path');
 const session = require('express-session');
 const { mapSeries } = require('bluebird');
-// eslint-disable-next-line
-const { checkExistingUser, saveUser, updatePreferences, matchMaker } = require('../database/database-helpers');
+const {
+  checkExistingUser,
+  saveUser,
+  updatePreferences,
+  matchMaker,
+} = require('../database/database-helpers');
 const { createSession, getUserLocation, logoutUser } = require('./helpers.js');
 
 const app = express();
@@ -52,7 +56,7 @@ app.post('/login', (req, res) => {
 });
 
 // User submits preferences andB looks for a match
-app.post('/home/:email', (req, res) => {
+app.post('/home/email', (req, res) => {
   // console.log(req.connection.remoteAddress, 'req.connection.remoteAddress');
   // console.log(req.connection, 'req.connection');
   // const { remoteAddress } = req.connection;
@@ -69,7 +73,7 @@ app.post('/home/:email', (req, res) => {
     .then((matches) => {
       if (matches.length < 1) {
         console.log('No Matches Found');
-        res.redirect('/home/:email');
+        res.redirect('/home/email');
       } else {
         let match = 'No Matches Found';
         for (let i = 0; i < matches.length; i += 1) {
@@ -81,11 +85,10 @@ app.post('/home/:email', (req, res) => {
           console.log(match, ': match outside if');
           return match;
         }
-
-        // TODO: Need to send the [0] from returned matches.
-        // console.log(matches[0], 'matches[0] Match Found!');
-        // res.send(matches[0].number);
       }
+    })
+    .then((match) => {
+      res.send(match);
     })
     .catch(err => console.error(err));
 });
