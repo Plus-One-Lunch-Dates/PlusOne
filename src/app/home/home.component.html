@@ -1,199 +1,203 @@
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="row">
-					<a routerLink="/">
-          <div align="middle" class="col-md-12">
-            <img width="150px" alt="plus-one-logo" src="../../assets/plus-one-logo.png" />
+	<div align="middle" class="row">
+		<div align="middle" class="col-md-4">
+			<div align="middle" class="row">
+				<a routerLink="/">
+					<div class="col-md-12">
+						<img class="img" width="150px" alt="plus-one-logo" src="../../assets/plus-one-logo.png" />
 					</div>
-					</a>
+				</a>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<div align="middle" class="card">
+						<h5 class="card-header">
+							{{this.email}}
+						</h5>
+					</div>
+					<br>
+					<div align="middle" class="card">
+						<h5 align="middle" class="card-header">
+							Favorite Foods
+						</h5>
+						<div align="middle" class="card-body">
+							<p class="card-text">
+								Tacos :)
+							</p>
+						</div>
+					</div>
+					<br>
+					<div class="card">
+						<h5 align="middle" class="card-header">
+							Favorite Conversation Topics
+						</h5>
+						<div class="card-body">
+							<p align="middle" class="card-text">
+								Taco Tuesday!!!
+							</p>
+						</div>
+					</div>
 				</div>
-				<br>
-				<br>
-        <div class="row">
-          <div class="col-md-12">
-            <div align="middle" class="card">
-              <h5 class="card-header">
-                {{this.email}}
-              </h5>
-						</div>
-						<br>
-            <div align="middle" class="card">
-              <h5 align="middle" class="card-header">
-                Favorite Foods
-              </h5>
-              <div align="middle" class="card-body">
-                <p class="card-text">
-                  Tacos :)
-                </p>
-              </div>
-						</div>
-						<br>
-            <div class="card">
-              <h5 align="middle" class="card-header">
-                Favorite Conversation Topics
-              </h5>
-              <div class="card-body">
-                <p align="middle" class="card-text">
-                  Taco Tuesday!!!
-                </p>
-              </div>             
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8">
-				<br>
-				<br>
-        <div class="row">
-          <div class="col-md-10">
-					</div>
-					<a routerLink="/">
-          <div class="col-md-2">
-            <button (click)="logout()" type="button" class="btn btn-primary">
-              Logout
-            </button>
-					</div>
-					</a>
-				</div>
-				<br>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <h5 align="middle" class="card-header">
-                    Cravings
-                  </h5>
-                </div>
-              </div>
-						</div>
-						<br>
-						<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-4">
-										 
-										<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
-											Filipino
-										</button>
-									</div>
-									<div class="col-md-4">
-										 
-										<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
-											Pizza
-										</button>
-									</div>
-									<div class="col-md-4">
-										 
-										<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
-											Ethiopian
-										</button>
-									</div>
-								</div>
-							</div>
-							<br>
-							<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-4">									 
-											<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
-												Mexican
-											</button>
-										</div>
-										<div class="col-md-4">
-											 
-											<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
-											  Vietnamese
-											</button>
-										</div>
-										<div class="col-md-4">										 
-											<button (click)="category($event)" type="button" class="btn btn-primary btn-block">
-												Other
-											</button>
-										</div>
-									</div>
-								</div>
-								<br>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <h5 align="middle" class="card-header">
-                    Price
-                  </h5>
-                </div>
-              </div>
-						</div>
-						<br>
-						<div class="container-fluid">
-								<div class="row">
-									<div align="middle" class="col-md-4">
-										 
-										<button (click)="price($event)" type="button" class="btn btn-primary btn-block">
-											$
-										</button>
-									</div>
-									<div align="middle" class="col-md-4">
-										 
-										<button (click)="price($event)" type="button" class="btn btn-primary btn-block">
-											$$
-										</button>
-									</div>
-									<div align="middle" class="col-md-4">
-										 
-										<button (click)="price($event)" type="button" class="btn btn-primary btn-block">
-											$$$
-										</button>
-									</div>
-								</div>
-							</div>           
-				<br>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <h5 align="middle" class="card-header">
-                    Attire
-                  </h5>
-                </div>
-              </div>
-						</div>
-						<br>
-						<div class="container-fluid">
-								<div class="row">
-									<div align="middle" class="col-md-4">
-										 
-										<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-primary btn-block">
-											Sporty
-										</button>
-									</div>
-									<div align="middle" class="col-md-4">
-										 
-										<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-primary btn-block">
-											Casual
-										</button>
-									</div>
-									<div align="middle" class="col-md-4">
-										 
-										<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-primary btn-block">
-											Business
-										</button>
-									</div>
-								</div>
-							</div>
-							<br>
-				<br>
-        <div class="row">
-          <div class="col-md-10">
-          </div>
-          <div class="col-md-2">
-            <button (click)="matchMe(model)" type="button" class="btn btn-primary btn-block">
-              Match Me
-            </button>
-          </div>
-        </div>
 			</div>
 		</div>
-  </div>
-  <br><br><br><br><br>
+		<div class="col-md-8">
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-10">
+				</div>
+				<a routerLink="/">
+					<div class="col-md-2">
+						<button (click)="logout()" type="button" class="btn btn-dark">
+							Logout
+						</button>
+					</div>
+				</a>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<h5 align="middle" class="card-header">
+									Cravings
+								</h5>
+								<div align="middle" class="card-body">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-4">
+												<button (click)="category($event)" type="button" class="btn btn-dark btn-block">
+													Filipino
+												</button>
+											</div>
+											<div class="col-md-4">
+												<button (click)="category($event)" type="button" class="btn btn-dark btn-block">
+													Pizza
+												</button>
+											</div>
+											<div class="col-md-4">
+												<button (click)="category($event)" type="button" class="btn btn-dark btn-block">
+													Ethiopian
+												</button>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-4">
+												<button (click)="category($event)" type="button" class="btn btn-dark btn-block">
+													Mexican
+												</button>
+											</div>
+											<div class="col-md-4">
+												<button (click)="category($event)" type="button" class="btn btn-dark btn-block">
+													Vietnamese
+												</button>
+											</div>
+											<div class="col-md-4">
+												<button (click)="category($event)" type="button" class="btn btn-dark btn-block">
+													Other
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card">
+										<h5 align="middle" class="card-header">
+											Price
+										</h5>
+										<div align="middle" class="card-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div align="middle" class="col-md-4">
+														<button (click)="price($event)" type="button" class="btn btn-dark btn-block">
+															$
+														</button>
+													</div>
+													<div align="middle" class="col-md-4">
+														<button (click)="price($event)" type="button" class="btn btn-dark btn-block">
+															$$
+														</button>
+													</div>
+													<div align="middle" class="col-md-4">
+														<button (click)="price($event)" type="button" class="btn btn-dark btn-block">
+															$$$
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="card">
+												<h5 align="middle" class="card-header">
+													Attire
+												</h5>
+												<div align="middle" class="card-body">
+													<div class="container-fluid">
+														<div class="row">
+															<div align="middle" class="col-md-4">
+
+																<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-dark btn-block">
+																	Sporty
+																</button>
+															</div>
+															<div align="middle" class="col-md-4">
+
+																<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-dark btn-block">
+																	Casual
+																</button>
+															</div>
+															<div align="middle" class="col-md-4">
+
+																<button (click)="attire($event)" (click)="log()" align="middle" type="button" class="btn btn-dark btn-block">
+																	Business
+																</button>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-md-10">
+										</div>
+										<div class="col-md-2">
+											<button (click)="matchMe(model)" type="button" class="btn btn-dark">
+												Match Me
+											</button>
+										</div>
+									</div>
+									<div class="row">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>

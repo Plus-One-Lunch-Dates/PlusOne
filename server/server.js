@@ -3,8 +3,12 @@ const { urlencoded, json } = require('body-parser');
 const path = require('path');
 const session = require('express-session');
 const { mapSeries } = require('bluebird');
-// eslint-disable-next-line
-const { checkExistingUser, saveUser, updatePreferences, matchMaker } = require('../database/database-helpers');
+const {
+  checkExistingUser,
+  saveUser,
+  updatePreferences,
+  matchMaker,
+} = require('../database/database-helpers');
 const { createSession, getUserLocation, logoutUser } = require('./helpers.js');
 
 const app = express();
@@ -31,8 +35,8 @@ app.use(express.static(path.join(__dirname, '../dist/mean-angular6')));
 // Sign up for new account
 app.post('/signup', (req, res) => {
   // eslint-disable-next-line
-  const { firstName, lastName, username, email, password } = req.body;
-  saveUser(firstName, lastName, username, email, password);
+  const { firstName, lastName, username, number, email, password } = req.body;
+  saveUser(firstName, lastName, username, number, email, password);
   res.sendStatus(201);
 });
 
@@ -51,15 +55,16 @@ app.post('/login', (req, res) => {
     .catch(err => console.error(err, 'Error chceking user'));
 });
 
-// User submits preferences and looks for a match
-app.post('/home/:email', (req, res) => {
+// User submits preferences andB looks for a match
+app.post('/home/email', (req, res) => {
   // console.log(req.connection.remoteAddress, 'req.connection.remoteAddress');
   // console.log(req.connection, 'req.connection');
-  const { remoteAddress } = req.connection;
+  // const { remoteAddress } = req.connection;
   // eslint-disable-next-line
   const { email, cravings, price, attire } = req.body; 
   // TODO: Log to check req.body and IP
-  const userIP = remoteAddress.slice(7);
+  console.log(email, 'email');
+  const userIP = req.ip;
   console.log(userIP, 'userIP');
   updatePreferences(email, cravings, price, attire);
   getUserLocation(email, userIP)
@@ -67,12 +72,23 @@ app.post('/home/:email', (req, res) => {
     .then(promisedMatches => mapSeries(promisedMatches, promisedMatch => promisedMatch))
     .then((matches) => {
       if (matches.length < 1) {
-        res.redirect('/home/:email');
+        console.log('No Matches Found');
+        res.redirect('/home/email');
       } else {
-        // TODO: Need to send the [0] from returned matches.
-        console.log(matches[0], 'matches[0] Match Found!');
-        res.redirect('/chat');
+        let match = 'No Matches Found';
+        for (let i = 0; i < matches.length; i += 1) {
+          if (matches[i].email !== email) {
+            match = { number: matches[i].number, name: matches[i].firstName };
+            console.log(match, ': match inside if');
+            return match;
+          }
+          console.log(match, ': match outside if');
+          return match;
+        }
       }
+    })
+    .then((match) => {
+      res.send(match);
     })
     .catch(err => console.error(err));
 });

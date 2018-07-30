@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 
   category(event) {
     // console.log(event.target.innerHTML.toString());
-    this.model.email = 's.ayalew@yahoo.com'
+    this.model.email = this.email;
     this.model.cravings = event.target.innerHTML.toString();
   }
   price(event) {

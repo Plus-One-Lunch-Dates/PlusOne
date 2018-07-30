@@ -2,11 +2,12 @@ const db = require('./index.js');
 
 const { User } = db;
 
-const saveUser = (firstName, lastName, username, email, password) => {
+const saveUser = (firstName, lastName, username, number, email, password) => {
   const user = new User({
     firstName,
     lastName,
     username,
+    number,
     email,
     password,
   });
@@ -45,7 +46,8 @@ const matchMaker = (user) => {
   console.log(user, 'user');
   // will return a promise that will resolve into an array of matches which will include the user
   // .then and .catch will need to be used when dealing with this function in the server
-  const query = { location: user.location };
+  // eslint-disable-next-line
+  const query = { location: user.location, cravings: user.cravings, price: user.price, attire: user.attire };
   return new Promise((resolve, reject) => {
     User.find(query, (err, matches) => {
       if (err) {
