@@ -14,7 +14,9 @@ export class HomeComponent implements OnInit {
   email: string;
   private sub: any;
 
-  model: any = {}
+  model: any = {};
+
+  match: any;
 
   constructor(private Http: HttpService, private route: ActivatedRoute) { }
 
@@ -51,8 +53,8 @@ export class HomeComponent implements OnInit {
     this.model.attire = event.target.innerHTML.toString();
   }
 
-  matchMe(model){
-    this.Http.gotoChat(model)
+  matchMe(){
+    this.Http.gotoChat(this.model);
   }
 
 }
