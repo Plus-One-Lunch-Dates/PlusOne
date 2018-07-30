@@ -39,5 +39,5 @@ Thumbs.db
 
 /database/database-config.js
 /database/database-config2.js
-
+database/database-config.js
 /server/config.js

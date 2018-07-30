@@ -38,16 +38,12 @@ export class HomeComponent implements OnInit {
   }
 
   category(event) {
-    // console.log(event.target.innerHTML.toString());
-    this.model.email = 's.ayalew@yahoo.com'
     this.model.cravings = event.target.innerHTML.toString();
   }
   price(event) {
-    // console.log(event.target.innerHTML.toString());
     this.model.price = event.target.innerHTML.toString();
   }
   attire(event) {
-    // console.log(event.target.innerHTML.toString());
     this.model.attire = event.target.innerHTML.toString();
   }
 
