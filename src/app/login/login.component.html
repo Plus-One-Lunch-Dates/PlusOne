@@ -23,7 +23,7 @@
               <label for="email">
                 Email address
               </label>
-              <input [(ngModel)]="model.email" #email="ngModel" name="email" type="email" class="form-control" id="email" />
+              <input [(ngModel)]="model.email" #email="ngModel" name="email" type="email" class="form-control" id="email" placeholder="you@yourdomain.com"/>
             </div>
             <div class="form-group">
                
@@ -32,7 +32,7 @@
               </label>
               <input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password" />
 						</div>
-            <button (click)="loginUser(model)"type="submit" class="btn btn-primary">
+            <button (click)="loginUser(model)"type="button" class="btn btn-primary">
               Login
 						</button>
 						<a style="float: right;" class="btn btn-primary" routerLink="/signup">Sign Up</a>
