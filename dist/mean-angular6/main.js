@@ -380,16 +380,12 @@ var HomeComponent = /** @class */ (function () {
         this.Http.home(model);
     };
     HomeComponent.prototype.category = function (event) {
-        // console.log(event.target.innerHTML.toString());
-        this.model.email = 's.ayalew@yahoo.com';
         this.model.cravings = event.target.innerHTML.toString();
     };
     HomeComponent.prototype.price = function (event) {
-        // console.log(event.target.innerHTML.toString());
         this.model.price = event.target.innerHTML.toString();
     };
     HomeComponent.prototype.attire = function (event) {
-        // console.log(event.target.innerHTML.toString());
         this.model.attire = event.target.innerHTML.toString();
     };
     HomeComponent.prototype.matchMe = function (model) {
