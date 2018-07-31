@@ -3,7 +3,11 @@ const config = require('../database/database-config2.js');
 const { updateLocation } = require('../database/database-helpers');
 
 const key = config.IPStack_API_KEY;
-
+/*
+*   Redirects are happening on the client side.
+*   Sessions functioning properly.
+*   API Calls functioning
+*/
 const isLoggedIn = req => (req.session ? !!req.session.user : false);
 
 const checkIfUserLoggedIn = (req, res, next) => {
@@ -20,7 +24,7 @@ const createSession = (req, res) => {
     if (err) {
       console.error(err);
     }
-    res.redirect('/home/:email');
+    res.redirect('/home/email');
   });
 };
 
@@ -30,19 +34,19 @@ const logoutUser = (req, res) => {
   });
 };
 
-// addUserLocation successfully makes ipStack API Call and updates user's location
 const getUserLocation = (email, ipAddress) => axios({
   method: 'get',
   url: `http://api.ipstack.com/${ipAddress}?access_key=${key}&fields=main`,
   dataType: 'jsonp'
 })
   .then(response => response.data.city)
-// TODO: this can be updated later in order to save more of the location data than just the city
+// This can be updated later in order to save more of the location data than just the city
   .then(city => updateLocation(email, city))
-  .catch((error) => {
-    console.error(error);
-  });
+  .catch(error => console.error(error));
 
 module.exports = {
-  checkIfUserLoggedIn, createSession, getUserLocation, logoutUser
+  checkIfUserLoggedIn,
+  createSession,
+  getUserLocation,
+  logoutUser
 };

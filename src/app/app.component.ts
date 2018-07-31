@@ -9,11 +9,7 @@ export class AppComponent{
   title = 'app';
 
   constructor() { 
-    
   }
-
   ngOnInit() {
   }
-
-  
 }

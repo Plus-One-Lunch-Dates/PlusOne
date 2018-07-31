@@ -16,46 +16,51 @@
 				</h5>
 				<div class="card-body">
 
-          <form role="form">
+					<form role="form">
 						<div class="form-group">
-               
-              <label for="firstname">
-                First Name
-              </label>
-							<input [(ngModel)]="model.firstName" #firstname="ngModel" name="firstname" type="text" class="form-control" id="firstname" required />
+
+							<label for="firstname">
+								First Name
+							</label>
+							<input [(ngModel)]="model.firstName" #firstname="ngModel" name="firstname" type="text" class="form-control" id="firstname"
+							 required />
 							<label for="lastname">
-                Last Name
-              </label>
-							<input [(ngModel)]="model.lastName" #lastname="ngModel" name="lastname" type="text" class="form-control" id="lastname"  required />
+								Last Name
+							</label>
+							<input [(ngModel)]="model.lastName" #lastname="ngModel" name="lastname" type="text" class="form-control" id="lastname" required
+							/>
 							<label for="firstname">
 								Username
 							</label>
-							<input [(ngModel)]="model.username" #username="ngModel" name="username" type="text" class="form-control" id="username" required />
+							<input [(ngModel)]="model.username" #username="ngModel" name="username" type="text" class="form-control" id="username" required
+							/>
 							<label for="firstname">
-									Phone Number
-								</label>
-								<input [(ngModel)]="model.number" #number="ngModel" name="number" type="number" class="form-control" id="number" required />
-            </div>	
-						<div class="form-group">
-               
-              <label for="email">
-                Email address
-              </label>
-							<input [(ngModel)]="model.email" #email="ngModel" name="email" type="email" class="form-control" id="email" required/>
-            </div>
-            <div class="form-group">          
-              <label for="password">
-                Password
-              </label>
-							<input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password" required minlength="6"/>
+								Phone Number
+							</label>
+							<input [(ngModel)]="model.number" #number="ngModel" name="number" type="number" class="form-control" id="number" required
+							/>
 						</div>
-            <button (click)="signupUser(model)" type="submit" value="Submit" class="btn btn-primary">
-              Sign Up
+						<div class="form-group">
+
+							<label for="email">
+								Email address
+							</label>
+							<input [(ngModel)]="model.email" #email="ngModel" name="email" type="email" class="form-control" id="email" required/>
+						</div>
+						<div class="form-group">
+							<label for="password">
+								Password
+							</label>
+							<input [(ngModel)]="model.password" #password="ngModel" name="password" type="password" class="form-control" id="password"
+							 required minlength="6" />
+						</div>
+						<button (click)="signupUser(model)" type="submit" value="Submit" class="btn btn-primary">
+							Sign Up
 						</button>
 						<a style="float: right;" class="btn btn-primary" routerLink="/login">Login</a>
 						<div>
 						</div>
-          </form>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -63,4 +68,9 @@
 		</div>
 	</div>
 </div>
-<br><br><br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

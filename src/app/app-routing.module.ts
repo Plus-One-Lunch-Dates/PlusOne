@@ -5,8 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ChatComponent } from './chat/chat.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { AppComponent } from './app.component';
 
+// Client-side routes
 const routes: Routes = [
   {
     path: '', redirectTo: 'mainpage', pathMatch: 'full'
