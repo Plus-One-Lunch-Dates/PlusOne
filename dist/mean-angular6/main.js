@@ -53,6 +53,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// Client-side routes
 var routes = [
     {
         path: '', redirectTo: 'mainpage', pathMatch: 'full'
@@ -112,7 +113,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<router-outlet>\r\n"
+module.exports = "<router-outlet>\r\n"
 
 /***/ }),
 
@@ -196,27 +197,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-var routes = [
-    {
-        path: '', redirectTo: '/login', pathMatch: 'prefix'
-    },
-    {
-        path: 'signup',
-        component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_6__["SignupComponent"]
-    },
-    {
-        path: 'login',
-        component: _login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"]
-    },
-    {
-        path: 'home/:email',
-        component: _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"]
-    },
-    {
-        path: 'chat',
-        component: _chat_chat_component__WEBPACK_IMPORTED_MODULE_7__["ChatComponent"]
-    },
-];
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -328,7 +308,7 @@ module.exports = "img {\n    display: block;\n    margin-left: auto;\n    margin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\t<div align=\"middle\" class=\"row\">\n\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t<div align=\"middle\" class=\"row\">\n\t\t\t\t<a routerLink=\"/\">\n\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t<img class=\"img\" width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<br>\n\t\t\t<br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t<div align=\"middle\" class=\"card\">\n\t\t\t\t\t\t<h5 class=\"card-header\">\n\t\t\t\t\t\t\t{{this.email}}\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div align=\"middle\" class=\"card\">\n\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\tFavorite Foods\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t<p class=\"card-text\">\n\t\t\t\t\t\t\t\tTacos :)\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\tFavorite Conversation Topics\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<div class=\"card-body\">\n\t\t\t\t\t\t\t<p align=\"middle\" class=\"card-text\">\n\t\t\t\t\t\t\t\tTaco Tuesday!!!\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-8\">\n\t\t\t<br>\n\t\t\t<br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t</div>\n\t\t\t\t<a routerLink=\"/\">\n\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t<button (click)=\"logout()\" type=\"button\" class=\"btn btn-dark\">\n\t\t\t\t\t\t\tLogout\n\t\t\t\t\t\t</button>\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\tCravings\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tFilipino\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tPizza\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tEthiopian\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tMexican\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tVietnamese\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tTacos\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\t\t\tPrice\n\t\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$$\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$$$\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tAttire\n\t\t\t\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSporty\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCasual\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBusiness\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"matchMe(model)\" type=\"button\" class=\"btn btn-dark\">\n\t\t\t\t\t\t\t\t\t\t\t\tMatch Me\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tHere is your closest match. Enjoy lunch!\n\t\t\t\t\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"card-body\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p align=\"middle\" class=\"card-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Your match's name:\t{{this.model.match.name}}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>Contact your match: {{this.model.match.number}}</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-9\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-3\">\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n<!-- <p>{{this.model.match | json}}</p> -->"
+module.exports = "<div class=\"container-fluid\">\n\t<div align=\"middle\" class=\"row\">\n\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t<div align=\"middle\" class=\"row\">\n\t\t\t\t<a routerLink=\"/\">\n\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t<img class=\"img\" width=\"150px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<br>\n\t\t\t<br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t<div align=\"middle\" class=\"card\">\n\t\t\t\t\t\t<h5 class=\"card-header\">\n\t\t\t\t\t\t\t{{this.email}}\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div align=\"middle\" class=\"card\">\n\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\tFavorite Foods\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t<p class=\"card-text\">\n\t\t\t\t\t\t\t\tTacos :)\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\tFavorite Conversation Topics\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<div class=\"card-body\">\n\t\t\t\t\t\t\t<p align=\"middle\" class=\"card-text\">\n\t\t\t\t\t\t\t\tTaco Tuesday!!!\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"col-md-8\">\n\t\t\t<br>\n\t\t\t<br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t</div>\n\t\t\t\t<a routerLink=\"/\">\n\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t<button (click)=\"logout()\" type=\"button\" class=\"btn btn-dark\">\n\t\t\t\t\t\t\tLogout\n\t\t\t\t\t\t</button>\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t\t<br>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\tCravings\n\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tFilipino\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tPizza\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tEthiopian\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tMexican\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tVietnamese\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"category($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tTacos\n\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\t\t\tPrice\n\t\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$$\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"price($event)\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$$$\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tAttire\n\t\t\t\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"card-body\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSporty\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCasual\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div align=\"middle\" class=\"col-md-4\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"attire($event)\" (click)=\"log()\" align=\"middle\" type=\"button\" class=\"btn btn-dark btn-block\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBusiness\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t\t\t\t\t\t<button (click)=\"matchMe(model)\" type=\"button\" class=\"btn btn-dark\">\n\t\t\t\t\t\t\t\t\t\t\t\tMatch Me\n\t\t\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"card\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tHere is your closest match. Enjoy lunch!\n\t\t\t\t\t\t\t\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"card-body\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p align=\"middle\" class=\"card-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tYour match's name: {{this.model.match.name}}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>Contact your match: {{this.model.match.number}}</p>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-9\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-3\">\n\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<br>\n\t\t\t\t\t<!-- <p>{{this.model.match | json}}</p> -->"
 
 /***/ }),
 
@@ -361,37 +341,40 @@ var HomeComponent = /** @class */ (function () {
     function HomeComponent(Http, route) {
         this.Http = Http;
         this.route = route;
+        // This is where preferences are added for sending to server
         this.model = {};
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
+        // Access to the email of signed-in user
         this.sub = this.route.params.subscribe(function (params) {
             _this.email = params['email'];
         });
     };
+    // This changes the component on client-side and destroys the session
     HomeComponent.prototype.logout = function () {
         console.log('in logout!!');
         this.Http.exit();
     };
+    // This is for console logging in the body
     HomeComponent.prototype.log = function () {
         console.log(this.model);
     };
-    HomeComponent.prototype.signupUser = function (model) {
-        this.Http.home(model);
-    };
+    // This handles the clicks on cravings and the email for model object
+    // that is passed to the server
     HomeComponent.prototype.category = function (event) {
-        // console.log(event.target.innerHTML.toString());
         this.model.email = this.email;
         this.model.cravings = event.target.innerHTML.toString();
     };
+    // Same as category but for price option
     HomeComponent.prototype.price = function (event) {
-        // console.log(event.target.innerHTML.toString());
         this.model.price = event.target.innerHTML.toString();
     };
+    // Same as above but for attire
     HomeComponent.prototype.attire = function (event) {
-        // console.log(event.target.innerHTML.toString());
         this.model.attire = event.target.innerHTML.toString();
     };
+    // This passes the model to the server via httpService function
     HomeComponent.prototype.matchMe = function () {
         this.Http.gotoChat(this.model);
     };
@@ -437,6 +420,7 @@ var HttpService = /** @class */ (function () {
     function HttpService(http) {
         this.http = http;
     }
+    // Server post for new user signup
     HttpService.prototype.signup = function (_a) {
         var firstName = _a.firstName, lastName = _a.lastName, username = _a.username, number = _a.number, email = _a.email, password = _a.password;
         return this.http.post('/signup', {
@@ -450,6 +434,7 @@ var HttpService = /** @class */ (function () {
             console.log(data, ' is what we got from the server');
         });
     };
+    // Server post for user login
     HttpService.prototype.login = function (_a) {
         var email = _a.email, password = _a.password;
         return this.http.post('/login', {
@@ -459,16 +444,7 @@ var HttpService = /** @class */ (function () {
             console.log(data, ' is what we got from the server');
         });
     };
-    HttpService.prototype.home = function (_a) {
-        var attire = _a.attire, cravings = _a.cravings, price = _a.price;
-        return this.http.post('/home/:email', {
-            attire: attire,
-            cravings: cravings,
-            price: price
-        }).subscribe(function (data) {
-            console.log(data, ' is what we got from the server');
-        });
-    };
+    // Server post with user input for Matching
     HttpService.prototype.gotoChat = function (model) {
         return this.http.post('/home/email', model).subscribe(function (data) {
             console.log(data, 'match from server');
@@ -478,13 +454,23 @@ var HttpService = /** @class */ (function () {
             return model;
         });
     };
+    // Logout
     HttpService.prototype.exit = function () {
         return this.http.get('/logout').subscribe(function (data) { return console.log(data); });
     };
     HttpService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
-        }),
+        })
+        /*
+        *   These services will likely need to be reconfigured
+        *   to route via an internal-API endpoint to properly
+        *   interact with the server and not confuse Angular.
+        *   It is interacting with the server as-is and is getting
+        *   the proper data back from the database. But it could
+        *   end up causing issues as the app grows in complexity.
+        */
+        ,
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], HttpService);
     return HttpService;
@@ -587,7 +573,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-10\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-1\">\r\n              <a routerLink=\"/login\">\r\n                <button type=\"button\" class=\"btn btn-dark\">\r\n                  Login\r\n                </button> \r\n              </a>\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-1\">\r\n              <a routerLink=\"/signup\">\r\n                <button type=\"button\" class=\"btn btn-dark\">\r\n                  Signup\r\n                </button>\r\n              </a>\r\n            </div>\r\n          </div>\r\n          <div align=\"middle\">\r\n            <img align=\"middle\" width=\"300px\" alt=\"Plus-One-Logo\" src=\"../assets/plus-one-logo.png\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-4\">\r\n    \r\n              <br>\r\n              <div>\r\n                <img width=\"340px\" alt=\"Sample Chat\" src=\"../assets/sample-chat.png\" />\r\n              </div>            \r\n            </div>\r\n            <div class=\"col-md-4\">\r\n            </div>\r\n          </div>\r\n          <br>\r\n          <br>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-3\">\r\n            </div>\r\n            <div class=\"col-md-3\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-10\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-1\">\r\n              <a routerLink=\"/login\">\r\n                <button type=\"button\" class=\"btn btn-dark\">\r\n                  Login\r\n                </button>\r\n              </a>\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-1\">\r\n              <a routerLink=\"/signup\">\r\n                <button type=\"button\" class=\"btn btn-dark\">\r\n                  Signup\r\n                </button>\r\n              </a>\r\n            </div>\r\n          </div>\r\n          <div align=\"middle\">\r\n            <img align=\"middle\" width=\"300px\" alt=\"Plus-One-Logo\" src=\"../assets/plus-one-logo.png\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n          <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n            </div>\r\n            <div align=\"middle\" class=\"col-md-4\">\r\n\r\n              <br>\r\n              <div>\r\n                <img width=\"340px\" alt=\"Sample Chat\" src=\"../assets/sample-chat.png\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n            </div>\r\n          </div>\r\n          <br>\r\n          <br>\r\n          <div class=\"row\">\r\n            <div class=\"col-md-3\">\r\n            </div>\r\n            <div class=\"col-md-3\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<br>\r\n<br>\r\n<br>\r\n<br>"
 
 /***/ }),
 
@@ -650,7 +636,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<a routerLink=\"/\">\r\n\t\t\t\t<img width=\"130px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tCreate your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n          <form role=\"form\">\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"firstname\">\r\n                First Name\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.firstName\" #firstname=\"ngModel\" name=\"firstname\" type=\"text\" class=\"form-control\" id=\"firstname\" required />\r\n\t\t\t\t\t\t\t<label for=\"lastname\">\r\n                Last Name\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.lastName\" #lastname=\"ngModel\" name=\"lastname\" type=\"text\" class=\"form-control\" id=\"lastname\"  required />\r\n\t\t\t\t\t\t\t<label for=\"firstname\">\r\n\t\t\t\t\t\t\t\tUsername\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.username\" #username=\"ngModel\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" required />\r\n\t\t\t\t\t\t\t<label for=\"firstname\">\r\n\t\t\t\t\t\t\t\t\tPhone Number\r\n\t\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t\t<input [(ngModel)]=\"model.number\" #number=\"ngModel\" name=\"number\" type=\"number\" class=\"form-control\" id=\"number\" required />\r\n            </div>\t\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n               \r\n              <label for=\"email\">\r\n                Email address\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.email\" #email=\"ngModel\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" required/>\r\n            </div>\r\n            <div class=\"form-group\">          \r\n              <label for=\"password\">\r\n                Password\r\n              </label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.password\" #password=\"ngModel\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" required minlength=\"6\"/>\r\n\t\t\t\t\t\t</div>\r\n            <button (click)=\"signupUser(model)\" type=\"submit\" value=\"Submit\" class=\"btn btn-primary\">\r\n              Sign Up\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<a style=\"float: right;\" class=\"btn btn-primary\" routerLink=\"/login\">Login</a>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t</div>\r\n          </form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<br><br><br><br><br><br>"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div align=\"middle\" class=\"col-md-12\">\r\n\t\t\t<a routerLink=\"/\">\r\n\t\t\t\t<img width=\"130px\" alt=\"plus-one-logo\" src=\"../../assets/plus-one-logo.png\" />\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<div class=\"card\">\r\n\t\t\t\t<h5 align=\"middle\" class=\"card-header\">\r\n\t\t\t\t\tCreate your account\r\n\t\t\t\t</h5>\r\n\t\t\t\t<div class=\"card-body\">\r\n\r\n\t\t\t\t\t<form role=\"form\">\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n\r\n\t\t\t\t\t\t\t<label for=\"firstname\">\r\n\t\t\t\t\t\t\t\tFirst Name\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.firstName\" #firstname=\"ngModel\" name=\"firstname\" type=\"text\" class=\"form-control\" id=\"firstname\"\r\n\t\t\t\t\t\t\t required />\r\n\t\t\t\t\t\t\t<label for=\"lastname\">\r\n\t\t\t\t\t\t\t\tLast Name\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.lastName\" #lastname=\"ngModel\" name=\"lastname\" type=\"text\" class=\"form-control\" id=\"lastname\" required\r\n\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t\t<label for=\"firstname\">\r\n\t\t\t\t\t\t\t\tUsername\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.username\" #username=\"ngModel\" name=\"username\" type=\"text\" class=\"form-control\" id=\"username\" required\r\n\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t\t<label for=\"firstname\">\r\n\t\t\t\t\t\t\t\tPhone Number\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.number\" #number=\"ngModel\" name=\"number\" type=\"number\" class=\"form-control\" id=\"number\" required\r\n\t\t\t\t\t\t\t/>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n\r\n\t\t\t\t\t\t\t<label for=\"email\">\r\n\t\t\t\t\t\t\t\tEmail address\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.email\" #email=\"ngModel\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" required/>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"form-group\">\r\n\t\t\t\t\t\t\t<label for=\"password\">\r\n\t\t\t\t\t\t\t\tPassword\r\n\t\t\t\t\t\t\t</label>\r\n\t\t\t\t\t\t\t<input [(ngModel)]=\"model.password\" #password=\"ngModel\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\"\r\n\t\t\t\t\t\t\t required minlength=\"6\" />\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<button (click)=\"signupUser(model)\" type=\"submit\" value=\"Submit\" class=\"btn btn-primary\">\r\n\t\t\t\t\t\t\tSign Up\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<a style=\"float: right;\" class=\"btn btn-primary\" routerLink=\"/login\">Login</a>\r\n\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</form>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"col-md-3\">\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>"
 
 /***/ }),
 

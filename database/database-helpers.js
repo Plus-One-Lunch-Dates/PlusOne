@@ -34,20 +34,18 @@ const updatePreferences = (email, cravings, price, attire) => {
   const query = { email };
   User.findOneAndUpdate(query, { cravings, price, attire }, { new: true }, (err, updatedModel) => {
     if (err) {
-      console.log('Something wrong when updating database!');
+      console.error(err, 'Something wrong when updating database!');
     }
-    // TODO: Decide if we want to do anything else with this updated model here.
-    // Maybe pass in matchMaking helper as a cb?
-    console.log(updatedModel, 'updatedModel');
   });
 };
 
 const matchMaker = (user) => {
-  console.log(user, 'user');
-  // will return a promise that will resolve into an array of matches which will include the user
-  // .then and .catch will need to be used when dealing with this function in the server
-  // eslint-disable-next-line
-  const query = { location: user.location, cravings: user.cravings, price: user.price, attire: user.attire };
+  const query = {
+    location: user.location,
+    cravings: user.cravings,
+    price: user.price,
+    attire: user.attire
+  };
   return new Promise((resolve, reject) => {
     User.find(query, (err, matches) => {
       if (err) {
